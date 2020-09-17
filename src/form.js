@@ -10,17 +10,19 @@ function InputForm({ setInput, setInput2, }) {
     }
 
     return (
-        <section>
+        <div className="App">
             <form onSubmit={handleSubmit}>
                 <h2>Hero's fight!!</h2>
-                <label htmlFor="herosName">
-                    Enter your favorite hero's name
+                <label htmlFor="herosName1">
+                    Player 1
                     <input
-                        id="herosName"
+                        id="herosName1"
                         name="hero1"
-                    />
+                    /></label>
+                <label htmlFor="herosName2">
+                    Player 2
                     <input
-                        id="herosName"
+                        id="herosName2"
                         name="hero2"
                     />
                 </label>
@@ -28,7 +30,7 @@ function InputForm({ setInput, setInput2, }) {
                     Submit
                 </button>
             </form>
-        </section>
+        </div>
     );
 }
 
