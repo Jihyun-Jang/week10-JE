@@ -48,5 +48,5 @@
 [x]Make it look sick
 
 ## Team
-*Jihyun 
-*Ephie 
+* Jihyun 
+* Ephie 
