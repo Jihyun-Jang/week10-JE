@@ -43,6 +43,7 @@
 <br>
 - A hunger bar that decreases over time and is topped up when you feed them stars
 - A button to add more users to your collection
+<br>
 []Have integration tests using React Testing Library
 
 
