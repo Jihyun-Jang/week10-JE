@@ -34,11 +34,17 @@
 
  ## Criteria
 [x] Accept some user input (e.g. a username)
+<br>
 [x] Query an API (e.g. the Github API, or any other fun one)
+<br>
 [x]Populate the UI with API data
+<br>
 [x] Have some form of persistent state and interactivity, e.g.
+<br>
 - A hunger bar that decreases over time and is topped up when you feed them stars
+<br>
 - A button to add more users to your collection
+<br>
 []Have integration tests using React Testing Library
 
 
