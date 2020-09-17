@@ -18,12 +18,14 @@ function InputForm({ setInput, setInput2, }) {
                     <input
                         id="herosName1"
                         name="hero1"
+                        placeholder="Enter a hero's name"
                     /></label>
                 <label htmlFor="herosName2">
                     Player 2
                     <input
                         id="herosName2"
                         name="hero2"
+                        placeholder="Enter a hero's name"
                     />
                 </label>
                 <button type="submit" className="form__button">

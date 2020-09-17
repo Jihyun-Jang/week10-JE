@@ -7,6 +7,7 @@ import "./App.css";
 
 
 
+
 function App() {
   //const [output, setOutput] = React.useState("");
   const [input, setInput] = React.useState("");
@@ -40,8 +41,8 @@ function App() {
           {(!winner) ?
             <>
               <div className="cards">
-                <Card heroName={input} headingName={"PLAYER 1"} setScore={setScore} />
-                <Card heroName={input2} headingName={"PLAYER 2"} setScore={setScore2} />
+                <Card heroName={input} headingName={"PLAYER 1"} setScore={setScore} className="hero1" />
+                <Card heroName={input2} headingName={"PLAYER 2"} setScore={setScore2} className="hero2" />
               </div>
               <button className="fightBtn" onClick={() => {
                 compare(score, score2);
@@ -50,8 +51,11 @@ function App() {
               > Fight</button>
             </>
             :
-            <div>{winner} win!
-            <p>{`Player 1 :${score} - Player 2 :${score2}`}</p>
+            <div><h1>{winner} win!</h1>
+              {/* <p>{`Player 1 : ${score} points - Player 2 : ${score2} points`}</p> */}
+              <p>Player 1 : {score} points</p>
+              <p>Player 2 : {score2} points</p>
+
               <button
                 className="resetBtn"
                 onClick={() => {

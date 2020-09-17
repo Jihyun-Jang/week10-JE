@@ -1,9 +1,14 @@
 
 html{
-background:#0c1216;
+/* background:#0c1216; */
+background: url("https://images.wallpaperscraft.com/image/stars_galaxy_milky_way_starry_sky_night_sky_119125_3840x2160.jpg") no-repeat;
+background-size: cover;
 color:#c9e9ff;
-font-family: Marvel, Arial; 
+font-family: 'Carter One', cursive;
+/* cursor: url(avengers.png), auto; */
+
 }
+
 .App {
   display:flex;
   flex-direction: column;
@@ -33,32 +38,18 @@ font-family: Marvel, Arial;
   height:70vh;
 }
 
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-} */
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
 
 #img-alter {
   width: 15rem;
   border-radius: 50px;
   box-shadow: #c9e9ff 2px 2px 0;
+  /* animation: float 3s ease-out infinite; */
+  
+}
+
+.hero{
+  animation: float 3s ease-out infinite;
 }
 form {
   width: 20rem;
@@ -69,13 +60,21 @@ form {
   align-items: center;
   background:transparent;
   border-radius: 20px;
- 
+  margin: 7rem auto;
+  background:#0c1216;
 }
+
+input {
+  margin: 0 0 0.5rem 1rem;
+}
+
 button{
   background:transparent;
   border-radius: 20px;
   color:#c9e9ff;
   border:solid #c9e9ff 1px;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .inputform{
@@ -83,11 +82,39 @@ button{
   justify-content: center;
   align-items: center;
 }
+.avenger {
+  animation: float 3s ease-out infinite;
+  animation-duration: 3s;
+}
+.hero1, .hero2{
+  animation: float 3s ease-out infinite;
+
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 40px);
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width:400px){
+  .hero-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
