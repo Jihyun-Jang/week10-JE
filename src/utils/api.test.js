@@ -4,7 +4,7 @@ import testApi from "./api.js"
 
 test("fetch link works", () => {
     return testApi("abyss").then((res) => {
-        expect(res).toBeTruthy();
+        expect(res.ok).toBeTruthy();
     })
 })
 // test("Async code", () => {

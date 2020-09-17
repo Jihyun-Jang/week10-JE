@@ -67,8 +67,17 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background:transparent;
+  border-radius: 20px;
  
 }
+button{
+  background:transparent;
+  border-radius: 20px;
+  color:#c9e9ff;
+  border:solid #c9e9ff 1px;
+}
+
 .inputform{
   display:flex;
   justify-content: center;
