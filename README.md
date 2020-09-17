@@ -42,7 +42,6 @@
 [x] Have some form of persistent state and interactivity, e.g.
 <br>
 - A hunger bar that decreases over time and is topped up when you feed them stars
-<br>
 - A button to add more users to your collection
 <br>
 []Have integration tests using React Testing Library
