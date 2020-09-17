@@ -1,12 +1,12 @@
 import React from "react";
 
-function InputForm({ output, setOutput }) {
-    const [input, setInput] = React.useState("");
-    const [input2, setInput2] = React.useState("");
+function InputForm({ setInput, setInput2, }) {
+
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setOutput(input + input2);
+        setInput(event.target.elements.hero1.value);
+        setInput2(event.target.elements.hero2.value)
     }
 
     return (
@@ -17,18 +17,17 @@ function InputForm({ output, setOutput }) {
                     Enter your favorite hero's name
                     <input
                         id="herosName"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)} />
+                        name="hero1"
+                    />
                     <input
                         id="herosName"
-                        value={input2}
-                        onChange={(e) => setInput2(e.target.value)} />
+                        name="hero2"
+                    />
                 </label>
                 <button type="submit" className="form__button">
                     Submit
                 </button>
             </form>
-            {output && <output>{output}</output>}
         </section>
     );
 }
