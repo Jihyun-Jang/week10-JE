@@ -15,11 +15,14 @@ function App() {
 
   if (!input && !input2) {
     return (
-      <InputForm
-        setInput={setInput}
-        setInput2={setInput2}
-        className="inputform"
-      />
+      <div>
+        <h1 className="pageHeading">Marvel Wars</h1>
+        <InputForm
+          setInput={setInput}
+          setInput2={setInput2}
+          className="inputform"
+        />
+      </div>
     );
   }
   function compare(score, score2) {
@@ -32,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="pageHeading">Marvel Wars</h1>
       <div className="btnCont">
         <div className="hero-container">
           {!winner ? (
@@ -61,25 +65,25 @@ function App() {
               </button>
             </>
           ) : (
-            <div className="resultsCard">
-              <h1>{winner} win!</h1>
-              <p>Player 1 : {score} points</p>
-              <p>Player 2 : {score2} points</p>
+              <div className="resultsCard">
+                <h1>{winner} win!</h1>
+                <p>Player 1 : {score} points</p>
+                <p>Player 2 : {score2} points</p>
 
-              <button
-                className="resetBtn"
-                onClick={() => {
-                  setInput("");
-                  setInput2("");
-                  setScore(0);
-                  setScore2(0);
-                  setWinner(null);
-                }}
-              >
-                RESET
+                <button
+                  className="resetBtn"
+                  onClick={() => {
+                    setInput("");
+                    setInput2("");
+                    setScore(0);
+                    setScore2(0);
+                    setWinner(null);
+                  }}
+                >
+                  RESET
               </button>
-            </div>
-          )}
+              </div>
+            )}
         </div>
 
         {/* <button className="rdmFightBtn" onClick={randomise}>Random Fight</button> */}
