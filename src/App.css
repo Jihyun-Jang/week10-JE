@@ -1,54 +1,67 @@
-
-html{
-/* background:#0c1216; */
-background: url("https://images.wallpaperscraft.com/image/stars_galaxy_milky_way_starry_sky_night_sky_119125_3840x2160.jpg") no-repeat;
-background-size: cover;
-color:#c9e9ff;
-font-family: 'Carter One', cursive;
-/* cursor: url(avengers.png), auto; */
-
+html {
+  /* background:#0c1216; */
+  background: url("https://images.wallpaperscraft.com/image/stars_galaxy_milky_way_starry_sky_night_sky_119125_3840x2160.jpg")
+    repeat;
+  background-size: cover;
+  color: #c9e9ff;
+  font-family: "Carter One", cursive;
+  /* cursor: url(avengers.png), auto; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .App {
-  display:flex;
+  display: flex;
   flex-direction: column;
   text-align: center;
-
+}
+.resultsCard {
+  background: #0c1216;
+  box-shadow: #c9e9ff 2px 2px 0;
+  border: #c9e9ff 2px solid;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+p {
+  font-size: 30px;
+}
+h1 {
+  font-size: 50px;
 }
 
-.btCont{
-  display:flex;
+.btCont {
+  display: flex;
   flex-direction: column;
 }
-.hero-container{
-  display:flex;
+.hero-container {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width:100%;
-  height:70vh;
+  width: 100%;
+  height: 70vh;
   /* border:#ffb07c solid 3px; */
 }
-.cards{
-  display:flex;
+.cards {
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width:100%;
-  height:70vh;
+  width: 100%;
+  height: 70vh;
 }
-
-
 
 #img-alter {
   width: 15rem;
   border-radius: 50px;
   box-shadow: #c9e9ff 2px 2px 0;
   /* animation: float 3s ease-out infinite; */
-  
 }
 
-.hero{
+.hero {
   animation: float 3s ease-out infinite;
 }
 form {
@@ -58,27 +71,27 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:transparent;
+  background: transparent;
   border-radius: 20px;
   margin: 7rem auto;
-  background:#0c1216;
+  background: #0c1216;
 }
 
 input {
   margin: 0 0 0.5rem 1rem;
 }
 
-button{
-  background:transparent;
+button {
+  background: transparent;
   border-radius: 20px;
-  color:#c9e9ff;
-  border:solid #c9e9ff 1px;
+  color: #c9e9ff;
+  border: solid #c9e9ff 1px;
   padding: 0.5rem;
   margin: 0.5rem;
 }
 
-.inputform{
-  display:flex;
+.inputform {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -86,14 +99,14 @@ button{
   animation: float 3s ease-out infinite;
   animation-duration: 3s;
 }
-.hero1, .hero2{
+.hero1,
+.hero2 {
   animation: float 3s ease-out infinite;
-
 }
 
 @keyframes float {
   50% {
-     transform: translate(0, 40px);
+    transform: translate(0, 40px);
   }
 }
 
@@ -106,14 +119,14 @@ button{
   }
 }
 
-@media all and (max-width:400px){
-  .hero-container{
-    display:flex;
+@media all and (max-width: 400px) {
+  .hero-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  .cards{
-    display:flex;
+  .cards {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
